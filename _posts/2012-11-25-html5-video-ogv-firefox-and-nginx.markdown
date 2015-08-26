@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  HTML5 video, ogv, firefox and nginx
-date:   2012-11-25 16:50:10
+title: HTML5 video, ogv, firefox and nginx
+date: 2012-11-25 16:50:10
 categories: jekyll update
 ---
-#HTML5 video, ogv, firefox and nginx
-
 If you are having problems serving `ogv` video content on Firefox there are some steps that you should follow
 
 ##Serving ogg files with the correct MIME type

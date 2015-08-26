@@ -170,10 +170,6 @@
     padding: $spacing-unit 0;
 }
 
-.page-heading {
-    font-size: 20px;
-}
-
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -206,6 +202,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    border-bottom: 2px dotted $grey-color-dark;
 
     @include media-query($on-laptop) {
         font-size: 36px;
