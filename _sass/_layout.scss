@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 5px solid $top-bar-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -238,4 +238,61 @@
             font-size: 18px;
         }
     }
+}
+
+.post {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+    .p, ul {
+        line-height: 30px;
+    }
+
+    pre {
+        font-size: 18px;
+        display: block;
+        padding: 0;
+        margin: 50px 0 50px 0;
+        font-size: 18px;
+        word-wrap: break-word;
+        color: #333333;
+        border: none;
+        border-radius: 0;
+    }
+
+    h1,h2,h3,h4,h5 {
+        margin: 20px 0 20px 0;
+    }
+
+    .divider {
+        background: #dd4814;
+        color: #ebebeb;
+        padding: 5px;
+        margin: 40px 0;
+    }
+
+    .divider h3 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    h2 > code.hljs,
+    li > code.hljs,
+    p > em > code.hljs,
+    p > code.hljs {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        background-color: #fff;
+        line-height: 13px;
+        overflow: hidden;
+        color: #f92672;
+        height: auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100%;
+        font-style: italic;
+        background-color: inherit;
+    }
+
 }

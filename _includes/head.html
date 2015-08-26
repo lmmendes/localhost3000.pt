@@ -1,43 +1,18 @@
 <head>
   <meta charset="utf-8">
   <link rel="dns-prefetch" href="//www.google-analytics.com" />
-  <link rel="dns-prefetch" href="//www.google-analytics.com" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/monokai_sublime.min.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-  <script>
-    $(function(){
-      $('.post code').addClass('hljs');
-      hljs.initHighlightingOnLoad();
-    });
-  </script>
-  <style>
-    .post {
-      font-size: 14px;
-      font-family: 'Roboto', sans-serif;
-    }
-    .post p, .post ul {
-      line-height: 30px;
-    }
-    pre {
-      display: block;
-      padding: 0;
-      margin: 50px 0 50px 0;
-      font-size: 14px;
-      word-wrap: break-word;
-      color: #333333;
-      border: none;
-      border-radius: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 </head>
